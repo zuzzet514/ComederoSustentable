@@ -16,8 +16,7 @@ body {
 
 main {
     width: 100%;
-    height: 1000px;
-    background-image: url('resources/photos/nyegi-gSg0_8RPQfs-unsplash.jpg');
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,6 +25,26 @@ main {
     align-items: center;
 }
 
+#first-page {
+    background-image: url('resources/photos/nyegi-gSg0_8RPQfs-unsplash.jpg');
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-fluid {
+    background-color: red;
+    width: 100%;
+}
+
+.row.g-0.text-center {
+    background-color: black;
+}
 #cuadrant {
     display: flex;
     width: 70%;
