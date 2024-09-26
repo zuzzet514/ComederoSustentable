@@ -169,4 +169,21 @@ h1, p {
 
 }
 
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    #second-block .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* La imagen pasa a estar debajo del texto */
+    .col-4 {
+        order: 2; /* Poner la imagen al final en móviles */
+        margin-top: 20px; /* Ajustar el espaciado si es necesario */
+    }
+
+    .col-8 {
+        order: 1; /* El texto queda arriba */
+    }
+}
 
