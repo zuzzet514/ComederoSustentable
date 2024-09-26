@@ -30,12 +30,22 @@ html {
 
 /* ------------------ HTML body ------------------ */
 body {
-    background-image: url('resources/photos/bg.jpg');
     width: 100%;
-    height: 800px;
+    height: 100%;
+}
+
+/* ------------------ Wrapper for the background image ------------------ */
+.bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px; /* Adjust the height as needed */
+    background-image: url('resources/photos/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1; /* Places the background behind other content */
 }
 
 /* ------------------ EcoPet Meals' logo------------------ */
@@ -55,6 +65,7 @@ body {
 
 .navbar {
     background-color: var(--transp);
+    position: relative;
 }
 
 .navbar-text, .navbar-brand, .nav-link {
