@@ -2,7 +2,7 @@
     /*color palette*/
 --transp: rgba(70, 76, 60, 0.5);
 --darkest-green:  #293f10;
---darkest-green: #425e06;
+--dark-green: #425e06;
 --middle-green: #6d8209;
 --lemon: #9ba514;
 --lightest-green: #a7c090;
@@ -89,6 +89,7 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
+
 }
 
 #container-fluid {
@@ -149,7 +150,7 @@ h1, p {
     font-weight: bold;
     font-style: italic;
     font-size: medium;
-    color: var(--darkest-color);
+    color: var(--middle-green);
 }
 
 .accordion-button, .collapsed {
@@ -199,6 +200,63 @@ h1, p {
         max-width: 80%; /* Ajustar el tamaño de la imagen para que se vea bien en móviles */
         height: auto;
     }
+
+    /* Third Block Styles */
+    #third-block {
+        display: flex;
+        justify-content: center;
+        background-image: url("resources/photos/krista-mangulsone-9gz3wfHr65U-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; /* Places the background behind other content */
+    }
+
+    /* Styling for internal blocks */
+    .propuesta-block, .text-block {
+        color: white;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 300px;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .propuesta-block {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    }
+
+    .text-block {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column-reverse; /* Texto arriba, propuesta abajo en móviles */
+            padding: 20px;
+        }
+
+        .propuesta-block, .text-block {
+            min-height: 200px; /* Ajusta la altura mínima en móviles */
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem; /* Ajusta el tamaño del texto para dispositivos móviles */
+        }
+    }
+
+
 }
 
 
