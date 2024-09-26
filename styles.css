@@ -173,28 +173,26 @@ h1, p {
 @media (max-width: 768px) {
     #second-block .row {
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra los elementos de la fila */
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
 
-    /* Centrar la imagen y los acordiones en la columna */
-    .col-4, .col-8 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%; /* Asegura que ocupen todo el ancho disponible */
-    }
-
-    /* La imagen pasa a estar debajo del texto */
+    /* Ajuste para las columnas de la imagen y los acordeones */
     .col-4 {
-        order: 2; /* Poner la imagen al final en móviles */
-        margin-top: 20px; /* Ajustar el espaciado si es necesario */
+        order: 2; /* La imagen va al final, debajo de los acordeones */
+        margin-top: 20px; /* Espaciado entre el texto y la imagen */
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Asegura que la columna ocupe todo el ancho disponible */
     }
 
     .col-8 {
-        order: 1; /* El texto queda arriba */
+        order: 1; /* Los acordeones permanecen arriba de la imagen */
         margin-bottom: 20px; /* Ajusta el espaciado inferior si es necesario */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Asegura que la columna ocupe todo el ancho disponible */
     }
 
     #dog-eating-trash {
@@ -203,5 +201,5 @@ h1, p {
     }
 }
 
-}
+
 
