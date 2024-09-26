@@ -94,7 +94,6 @@ main {
 #container-fluid {
     height: 100vh;
     width: 50vw;
-    padding-top: 10vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -132,24 +131,42 @@ h1, p {
 /* second block*/
 #second-block {
    width: 100%;
-    height: 500px;
-    margin-top: 20vh;
-    background-color: yellow;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#problematicas {
+    font-weight: bold;
+    font-size: xxx-large;
+    color: var(--lemon);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.problems {
+    font-weight: bold;
+    font-style: italic;
+    font-size: medium;
+    color: var(--darkest-color);
+}
+
+.accordion-button, .collapsed {
+    background-color: white;
+}
+
+
+
+.col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dog-eating-trash {
+    max-width: 280px;
+    height: auto;
 
 }
 
-.col-sm-8 {
-    background-color: greenyellow;
-    height: 100%;
-}
 
-
-.col-sm-4 {
-    background-color: red;
-    height: 100%
-}
-
-#second-block img {
-    height: 300px;
-
-}
