@@ -174,6 +174,16 @@ h1, p {
     #second-block .row {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Centra los elementos de la fila */
+    }
+
+    /* Centrar la imagen y los acordiones en la columna */
+    .col-4, .col-8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Asegura que ocupen todo el ancho disponible */
     }
 
     /* La imagen pasa a estar debajo del texto */
@@ -184,6 +194,14 @@ h1, p {
 
     .col-8 {
         order: 1; /* El texto queda arriba */
+        margin-bottom: 20px; /* Ajusta el espaciado inferior si es necesario */
     }
+
+    #dog-eating-trash {
+        max-width: 80%; /* Ajustar el tamaño de la imagen para que se vea bien en móviles */
+        height: auto;
+    }
+}
+
 }
 
